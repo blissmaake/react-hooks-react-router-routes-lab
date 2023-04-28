@@ -8,16 +8,32 @@ import Movies from "./Movies"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <NavBar />
-      <Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/actors" element={<Actors />} />
-        <Route path="/directors" element={<Directors />} />
-        <Route path="/movies" element={<Movies />} />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/actors">
+          <Actors />
+        </Route>
+        <Route path="/directors">
+          <Directors />
+        </Route>
+        <Route path="/movies">
+          <Movies />
+        </Route>
+      </Switch>
     </div>
   )
 }
-
 export default App
+// }
+
+//     {
+
+//     // <Movies />
+//     // <Directors />
+//     // <Actors />
+//     // <Home />
+//     }</div>;

@@ -7,6 +7,7 @@ function NavBar() {
       <NavLink to="/" exact4="true" activestyle={{ background: "darkblue" }}>
         Home
       </NavLink>
+
       <NavLink
         to="/movies"
         exact="true"
